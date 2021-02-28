@@ -11,12 +11,13 @@ import {
   StyleSheet,
   View,
 } from 'react-native';
-import Navigator from './Navigator'
+import Navigator from './Navigator';
+import {ThemeContextProvider} from './src/theme'
 const App=() => {
   return (
-    <>
+    <ThemeContextProvider name='default'>
       <Navigator/>
-    </>
+    </ThemeContextProvider>
   );
 };
 
